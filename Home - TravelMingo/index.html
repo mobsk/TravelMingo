@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - TravelMingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/TravelMingoIcon.jpeg" type="image/x-icon" />
+</head>
+
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="https://mobsk.github.io/TravelMingo/Home%20-%20TravelMingo">
+                <img src="images/TravelMingoLogoBarra.png" alt="Logo do site" class="logo-img">
+            </a>
+        </div>
+        <!-- Os textos interativos serão adicionados aqui -->
+        <div class="interactive-texts">
+            <div class="interactive-texts">
+                <a href="https://kuromorioficial.github.io/TravelMIngo/#" target="_self">Mapas</a>
+                <a href="contato.html" target="_self">Contato</a>
+                <a href="https://www.explorar.com" target="_blank">Nossa Missão</a>
+            </div>
+
+        </div>
+        <div class="nav-options">
+            <button class="nav-button" id="login-btn">Login</button>
+            <button class="nav-button" id="lang-btn">Idioma</button>
+        </div>
+    </nav>
+    <main class="content">
+        <h1>Bem-vindo ao <span class="blue">Travel</span><span class="pink">Mingo</span>🦩</h1>
+        <p>Explore o mundo ao alcance de todos!</p>
+        <section class="info-section">
+            <div class="info-content">
+                <div class="info-text">
+                    <h2>Oque é e como funciona o <span class="blue">Travel</span><span class="pink">Mingo</span>?</h2>
+                    <p>
+                        O <span class="blue">Travel</span><span class="pink">Mingo</span> é o seu guia de viagens
+                        acessíveis! O objetivo é ajudar a localizar pontos turisticos,
+                        locais interessantes e uteis pelas redondezas de nossos usuarios e até mesmo em um possivel
+                        local de viagem de interesse do usuario!
+                    </p>
+                    <p>
+                        Na página de mapas, o usuário pode procurar na opção
+                        de pesquisa o nome de ruas, países e pontos turísticos. Após a pesquisa, nas áreas ao redor
+                        aparecerão pontos de localização no mapa interativos:
+                    </p>
+                </div>
+                <div class="info-image">
+                    <img src="images/imagem exemplo pagina inicial 1.jfif" alt="Imagem de exemplo" class="info-img">
+                </div>
+            </div>
+            <section class="info-section">
+                <div class="info-content">
+                    <div class="info-text">
+                        <p>
+                            No <span class="blue">Travel</span><span class="pink">Mingo</span> após clicar em um icone do mapa, uma nova aba aparece com informações 
+                            sobre este lugar em especifico
+                        </p>
+                        <p>
+                            Na página de informações o usuario recebe imagem sobre o lugar, um resumo, e um botão que redireciona a pagina 
+                            para a wikipedia do local:
+                        </p>
+                    </div>
+                    <div class="info-image">
+                        <img src="images/imagem exemplo pagina inicial 2.jfif" alt="Imagem de exemplo" class="info-img">
+                </div>
+        </section>
+        <div class="gif-container">
+            <img src="images/video home 1.gif" alt="GIF explicativo" class="large-gif">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

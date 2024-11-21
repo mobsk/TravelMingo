@@ -1,0 +1,210 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #333333;
+    color: #333;
+}
+
+/* Barra de navegação */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #62b9ff;
+    color: #fff;
+    padding: 1.0rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo-img {
+    height: 80px;
+    cursor: pointer;
+    Right: 20px; /* Move a logo 10px para a direita */
+}
+
+/* Botões da barra */
+.nav-options {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #777;
+}
+
+/* Conteúdo principal */
+.content {
+    margin-top: 80px; /* Para evitar sobreposição com a barra fixa */
+    padding: 2rem;
+    text-align: center;
+}
+.interactive-texts a {
+    text-decoration: none;
+    color: #00b8e6; /* Cor inicial */
+    font-size: 16px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+     margin: 0 60px; /* Ajusta o espaçamento entre os links */
+}
+
+/* Barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Espalha os itens */
+    align-items: center;
+    background-color: #00b8e6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar a {
+    letter-spacing: 10px; /* Aumenta o espaçamento entre as letras */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo-img {
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Botões de navegação */
+.nav-options {
+    display: flex;
+    gap: 10px;
+}
+
+/* Texto interativo */
+.interactive-texts {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.interactive-texts a {
+    text-decoration: none;
+    color: #fff; /* Cor do texto */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.interactive-texts a:hover {
+    color: #ff5bad; /* Cor ao passar o mouse */
+}
+
+/* Botões de navegação */
+.nav-button {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #777;
+}
+
+.content h1 {
+    color: #ffffff; /* Substitua pelo código ou nome da cor desejada */
+}
+/* Seção Informativa */
+/* Seção Informativa */
+.info-section {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+.info-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    width: 100%;
+    gap: 30px; /* Espaçamento entre o texto e a imagem */
+}
+
+.info-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify; /* Justifica o texto */
+    margin: 0 15px; /* Adiciona margem nas laterais */
+    padding: 20px; /* Espaçamento interno para o texto não grudar nas bordas */
+}
+
+.info-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.info-img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+
+.content h2 {
+    color: #ffffff; /* Substitua pelo código ou nome da cor desejada */
+}.content p {
+    color: #ffffff; /* Substitua pelo código ou nome da cor desejada */
+}
+.pink {
+    color: #f88be6; /* Altere a cor como desejar */
+    font-weight: bold; /* Adiciona negrito, opcional */
+}
+.blue {
+    color: #00b8e6; /* Altere a cor como desejar */
+    font-weight: bold; /* Adiciona negrito, opcional */
+}
+.gif-container {
+    text-align: center; /* Centraliza o GIF */
+    margin-top: 40px; /* Espaçamento entre o conteúdo anterior e o GIF */
+}
+
+.large-gif {
+    width: 500%; /* Altera o tamanho do GIF (ajuste conforme necessário) */
+    max-width: 500px; /* Limita o tamanho máximo do GIF */
+    border-radius: 10px; /* Opcional: arredonda as bordas do GIF */
+}
+
