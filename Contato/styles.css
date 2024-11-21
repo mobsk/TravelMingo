@@ -8,9 +8,9 @@
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.8;
     background-color: #333333;
-    color: #333;
+    color: #ffffff;
 }
 
 /* Barra de navegação */
@@ -60,16 +60,16 @@ body {
 /* Barra de navegação */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Espalha os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+    justify-content: space-between;
     align-items: center;
-    background-color: #00b8e6;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
 }
+.nav-options {
+    display: flex;
+    flex-wrap: wrap; /* Adapta os itens em múltiplas linhas */
+    gap: 10px;
+}
+
 .navbar a {
     letter-spacing: 10px; /* Aumenta o espaçamento entre as letras */
 }
@@ -122,50 +122,6 @@ body {
 .nav-button:hover {
     background-color: #777;
 }
-
-.content h1 {
-    color: #ffffff; /* Substitua pelo código ou nome da cor desejada */
-}
-/* Seção Informativa */
-/* Seção Informativa */
-.info-section {
-    display: flex;
-    justify-content: center; /* Centraliza o conteúdo */
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 20px;
-}
-
-.info-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px; /* Largura máxima do conteúdo */
-    width: 100%;
-    gap: 30px; /* Espaçamento entre o texto e a imagem */
-}
-
-.info-text {
-    flex: 1;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-    text-align: justify; /* Justifica o texto */
-    margin: 0 15px; /* Adiciona margem nas laterais */
-    padding: 20px; /* Espaçamento interno para o texto não grudar nas bordas */
-}
-
-.info-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.info-img {
-    width: 80%;
-    max-width: 400px;
-    border-radius: 8px;
-}
 #login-icon {
     display: flex;
     align-items: center;
@@ -185,9 +141,10 @@ body {
     width: 24px; /* Tamanho do ícone */
     height: 24px;
 }
-.content h2 {
-    color: #ffffff; /* Substitua pelo código ou nome da cor desejada */
-}.content p {
+main {
+    margin-top: 80px; /* A mesma altura da barra de navegação */
+}
+.content p {
     color: #ffffff; /* Substitua pelo código ou nome da cor desejada */
 }
 .pink {
@@ -198,30 +155,67 @@ body {
     color: #00b8e6; /* Altere a cor como desejar */
     font-weight: bold; /* Adiciona negrito, opcional */
 }
-.gif-container {
-    text-align: center; /* Centraliza o GIF */
-    margin-top: 40px; /* Espaçamento entre o conteúdo anterior e o GIF */
+.content p {
+    color: #ffffff; /* Substitua pelo código ou nome da cor desejada */
 }
-
-.large-gif {
-    width: 500%; /* Altera o tamanho do GIF (ajuste conforme necessário) */
-    max-width: 500px; /* Limita o tamanho máximo do GIF */
-    border-radius: 10px; /* Opcional: arredonda as bordas do GIF */
-}
-#google_translate_element {
+.contacts {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #555; /* Cor de fundo */
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 8px; /* Tamanho do texto */
-    color: white;
+    flex-wrap: wrap; /* Permite que os cartões se ajustem à tela */
+    gap: 20px; /* Espaçamento entre os cartões */
+    justify-content: center; /* Centraliza os cartões */
+    padding: 20px;
 }
 
-#google_translate_element:hover {
-    background-color: #777; /* Cor ao passar o mouse */
+.contact-card {
+    background-color: #f9f9f9; /* Fundo claro */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 8px; /* Arredondar os cantos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+    width: 500px; /* Largura fixa */
+    text-align: left; /* Alinhamento do texto */
 }
 
+.contact-card h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #555;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.contact-card a {
+    color: #007bff; /* Azul */
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+.contact-photo {
+    width: 200px; /* Largura da foto */
+    height: 200px; /* Altura da foto */
+    border-radius: 35%; /* Torna a foto circular */
+    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorcer */
+    margin-bottom: 10px; /* Espaçamento entre a foto e o texto */
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto;
+}
+.content h2 {
+    color: #ffffff; 
+}
+.map-container {
+    margin-top: 40px; /* Espaço entre os cards e o mapa */
+    text-align: center; /* Centraliza o mapa */
+}
+
+.map-container iframe {
+    max-width: 100%; /* Faz com que o mapa se ajuste ao tamanho da tela */
+    height: 400px; /* Altura do mapa */
+    border-radius: 10px; /* Bordas arredondadas */
+}
