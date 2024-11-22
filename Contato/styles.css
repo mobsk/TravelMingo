@@ -8,7 +8,7 @@
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.8;
+    line-height: 1.6;
     background-color: #000a24;
     color: #ffffff;
 }
@@ -60,16 +60,16 @@ body {
 /* Barra de navegação */
 .navbar {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
-    justify-content: space-between;
+    justify-content: space-between; /* Espalha os itens */
     align-items: center;
+    background-color: #00b8e6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
-.nav-options {
-    display: flex;
-    flex-wrap: wrap; /* Adapta os itens em múltiplas linhas */
-    gap: 10px;
-}
-
 .navbar a {
     letter-spacing: 1px; /* Aumenta o espaçamento entre as letras */
 }
@@ -110,7 +110,7 @@ body {
 
 /* Botões de navegação */
 .nav-button {
-    background-color: #555;
+    background-color: #ffffff;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
