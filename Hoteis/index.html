@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca por Hoteis - TravelMingo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/TravelMingoIcon.jpeg" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Barra acima Inicio -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="https://mobsk.github.io/TravelMingo/Home/">
+                <img src="images/TravelMingoLogoBarra.png" alt="Logo do site" class="logo-img">
+            </a>
+        </div>
+        <!-- Os textos interativos serão adicionados aqui -->
+        <div class="interactive-texts">
+            <div class="interactive-texts">
+                <a href="https://mobsk.github.io/TravelMingo/Home/" target="_blank">Página Inicial</a>
+                <a href="https://kuromorioficial.github.io/TravelMIngo/#" target="_self">Mapas</a>
+                <a href="https://mobsk.github.io/TravelMingo/Contato/" target="_self">Contato</a>
+                <a href="https://mobsk.github.io/TravelMingo/Hoteis/" target="_self">Busca de Hoteis</a>
+            </div>
+            <div class="nav-options">
+                <a href="pagina-de-login.html" id="login-icon">
+                    <img src="images/loginusuario.png" alt="Login" class="icon">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Barra acima Final -->
+    <div id="map" style="height: 500px; width: 100%;"></div>
+    <div id="filters">
+        <label for="stars">Estrelas:</label>
+        <select id="stars">
+            <option value="any">Qualquer</option>
+            <option value="5">5 Estrelas</option>
+            <option value="4">4 Estrelas</option>
+            <option value="3">3 Estrelas</option>
+        </select>
+    
+        <label for="price">Preço Máximo:</label>
+        <input type="number" id="price" placeholder="R$" />
+    
+        <button onclick="applyFilters()">Aplicar Filtros</button>
+    </div>
+    <div id="map" style="height: 500px; width: 100%;"></div>
+
+    
+</body>
+<script src="script.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+
+</html>

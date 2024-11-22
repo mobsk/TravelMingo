@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #333333;
+    background-color: #000a24;
     color: #333;
 }
 
@@ -71,7 +71,7 @@ body {
     z-index: 1000;
 }
 .navbar a {
-    letter-spacing: 10px; /* Aumenta o espaçamento entre as letras */
+    letter-spacing: 1px; /* Aumenta o espaçamento entre as letras */
 }
 
 /* Logo */

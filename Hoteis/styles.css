@@ -8,9 +8,9 @@
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.8;
+    line-height: 1.6;
     background-color: #000a24;
-    color: #ffffff;
+    color: #333;
 }
 
 /* Barra de navegação */
@@ -60,16 +60,16 @@ body {
 /* Barra de navegação */
 .navbar {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
-    justify-content: space-between;
+    justify-content: space-between; /* Espalha os itens */
     align-items: center;
+    background-color: #00b8e6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
-.nav-options {
-    display: flex;
-    flex-wrap: wrap; /* Adapta os itens em múltiplas linhas */
-    gap: 10px;
-}
-
 .navbar a {
     letter-spacing: 1px; /* Aumenta o espaçamento entre as letras */
 }
@@ -141,12 +141,6 @@ body {
     width: 24px; /* Tamanho do ícone */
     height: 24px;
 }
-main {
-    margin-top: 80px; /* A mesma altura da barra de navegação */
-}
-.content p {
-    color: #ffffff; /* Substitua pelo código ou nome da cor desejada */
-}
 .pink {
     color: #f88be6; /* Altere a cor como desejar */
     font-weight: bold; /* Adiciona negrito, opcional */
@@ -155,67 +149,11 @@ main {
     color: #00b8e6; /* Altere a cor como desejar */
     font-weight: bold; /* Adiciona negrito, opcional */
 }
-.content p {
+.content h1 {
     color: #ffffff; /* Substitua pelo código ou nome da cor desejada */
 }
-.contacts {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os cartões se ajustem à tela */
-    gap: 20px; /* Espaçamento entre os cartões */
-    justify-content: center; /* Centraliza os cartões */
-    padding: 20px;
-}
-
-.contact-card {
-    background-color: #f9f9f9; /* Fundo claro */
-    border: 1px solid #ccc; /* Borda leve */
-    border-radius: 8px; /* Arredondar os cantos */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 20px;
-    width: 500px; /* Largura fixa */
-    text-align: left; /* Alinhamento do texto */
-}
-
-.contact-card h2 {
-    color: #333;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.contact-card p {
-    color: #555;
-    font-size: 1rem;
-    margin: 5px 0;
-}
-
-.contact-card a {
-    color: #007bff; /* Azul */
-    text-decoration: none;
-}
-
-.contact-card a:hover {
-    text-decoration: underline;
-}
-.contact-photo {
-    width: 200px; /* Largura da foto */
-    height: 200px; /* Altura da foto */
-    border-radius: 35%; /* Torna a foto circular */
-    object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorcer */
-    margin-bottom: 10px; /* Espaçamento entre a foto e o texto */
-    display: block; /* Garante que a imagem se comporte como um bloco */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto;
-}
 .content h2 {
-    color: #ffffff; 
-}
-.map-container {
-    margin-top: 40px; /* Espaço entre os cards e o mapa */
-    text-align: center; /* Centraliza o mapa */
-}
-
-.map-container iframe {
-    max-width: 100%; /* Faz com que o mapa se ajuste ao tamanho da tela */
-    height: 400px; /* Altura do mapa */
-    border-radius: 10px; /* Bordas arredondadas */
+    color: #ffffff; /* Substitua pelo código ou nome da cor desejada */
+}.content p {
+    color: #ffffff; /* Substitua pelo código ou nome da cor desejada */
 }
